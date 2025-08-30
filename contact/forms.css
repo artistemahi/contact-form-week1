@@ -7,11 +7,11 @@ body{
 div.formcontainer{
     width: auto;
     background-color: #fff;
-    margin: 30px 30px;
+    margin: 50px 30px;
     padding: 20px 40px ;
     max-width: 600px;
     border-radius: 5px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.603);
 }
 input{
     width: 100%;
@@ -49,7 +49,7 @@ header{
     color: rgb(46, 44, 44);
     font-size: large;
     font-family: arial;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 label.query{
     margin-bottom: 8px;
@@ -57,7 +57,6 @@ label.query{
 input[type=radio]{
     width: auto;  /* ye upar width input ki 100% thi isliye  yaha  ye  full width le raha tha isliye auto kiya  */
     display: inline-block;
-   
 }
 
 span.gen, span.supp{
@@ -81,33 +80,28 @@ input.consent{
     margin-left: 0px;
 }
 /* This is media query part */
-@media screen and (min-width:1020px){
+@media screen and (max-width:425px){
     input.firstname{
-        width: auto;
         display: inline;
     }
     label.lastname{
-        width: auto;
-        display: inline;
+        display: block;
     }
      input.lastname{
-        width: auto;
         display: inline;  
         margin-bottom: 0; 
     }
     label.email{
-        width: auto;
-        display: inline-block;
+        display: block;
         margin-bottom: 0;
     }
     input.email{
-        width: auto;
-        display: inline;
+        display: block;
     }
     label.query{
         display: inline-block;
         margin-right:0 ;
-        margin-bottom: 13px;
+        margin-bottom: 15px;
     }
     input.query{ /* ye hua h input radio ka */
         width: auto;
@@ -118,12 +112,12 @@ input.consent{
         margin-right: 20px;
     }
     span.gen{
-    display: inline-block;
+    display: block;
     border: 1.8px solid black;
     border-radius: 4px;
     padding-bottom: 9px;
-    margin: 0px 20px;
-    box-sizing: border-box;
+    margin-bottom:15px ;
+    
 }
 label.supp{
         display: inline-block;
@@ -131,12 +125,80 @@ label.supp{
         
     }
  span.supp{
-    display: inline-block;
+    display: block;
     border: 1.8px solid black;
     border-radius: 4px;
     padding-bottom: 9px;
-    margin: 20px 20px;
+    margin-bottom:15px ;
     box-sizing: border-box;
 }
     }
-   
+
+    /* this is the media query part of desktop view */
+   @media screen and (min-width :768px) {
+    label.firstname{
+        width: auto;
+        display: block;
+    }
+    input.firstname{
+        width: auto;
+        display: inline;
+    }
+    label.lastname{
+        display: inline;
+    }
+     input.lastname{
+        width: auto;
+        display: inline-block;   
+    }
+    label.email{
+        width: auto;
+        display: block;
+        margin-bottom: 0;
+    }
+    input.email{
+        display: block;
+    }
+    label.query{
+        display: block;
+        margin-right:0 ;
+        margin-bottom: 13px;
+    }
+    input.query{ /* ye hua h input radio ka */
+        width: auto;
+    }
+    label.general{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    span.gen{
+    display: inline;
+    border: 1.8px solid black;
+    border-radius: 4px;
+    padding: 9px 0px;
+    padding-left: 0;
+    padding-right: 100px;
+    margin-right:8px;
+    margin-left: 8px;
+    box-sizing: border-box;
+}
+label.supp{
+        display: inline;
+        margin-right: 20px;
+        
+    }
+ span.supp{
+    display: inline;
+    border: 1.8px solid black;
+    border-radius: 4px;
+    padding: 9px 0px;
+    padding-left:0 ;
+    padding-right:104px ;
+    margin-left: 8px;
+    margin-right:0 ;
+    box-sizing: border-box;
+}
+  label.message{
+    display: block;
+    }    
+   }
