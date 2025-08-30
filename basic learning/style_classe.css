@@ -1,0 +1,16 @@
+.content{ /* hum dot se classes ko access krte h*/
+    color: red;
+}
+/* ye sab p , div aese hum access krte h , to ye selectors hi h  */
+
+#content1{  /* aese id ko access krte h # se */
+    border: 1px solid red;
+ background-color: #802ce0a2;
+ padding: 20px;
+}
+div .error{
+    color: brown;
+}
+div.error{
+    color: blue;
+}

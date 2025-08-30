@@ -1,0 +1,193 @@
+body,ul,li,h1,h2,a{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+.banner{
+    position: relative;
+}
+.banner img{
+    max-width: 100%;
+}
+.welcome{
+    background-color: rgba(255, 166, 0, 0.658);
+    padding: 10px;
+    color:  white;
+    position:absolute;
+    left: 0%;
+    top: 30%;
+
+}
+.welcome h2{
+    font-size: 65px;
+}
+.welcome h2 span{
+    font-size: 1.3em;
+}
+header{
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    z-index: 1; /* ye z indez use hua taki text ko banner ke piche se aage la sake piche h to value increse kr do and aage aa jayega and aage h to decrease kroge to piche chle jayega */
+    width: 100%;
+    border-top-width: 10px;
+}
+header h1{
+    color: white;
+    border: 5px solid white;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 48%;
+
+}
+nav{
+    background-color: rgb(189, 181, 181);
+    padding: 20px;
+    position: sticky;
+    top: 107px;  /*ye top se kitne pr stick hoga vo h */
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li{
+ width: 25%;
+ display: inline-block;
+ font-size: 24px;
+}
+nav li a{
+    color: black;
+    text-decoration: none;
+}
+nav li a.join{
+    color: red;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 40px auto;
+    box-sizing: border-box;
+}
+article h2{
+    color: #F63232;
+    font-size: 50px;
+}
+article p{
+    line-height: 2em;
+    color: #4b4b4b;
+}
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+.images li img{
+    max-width: 100%;
+}
+section.join{
+    background-color: beige;
+}
+section.join p{
+    color: #4b4b4b;
+    text-align: center;
+    
+}
+section.join h2{
+    padding: 15px;
+    text-align: center;
+    font-family: arial;
+    font-size: xx-large;
+}
+form {
+    text-align: center;
+}
+input{
+    font-size: 20px;
+    border-radius: 28px ;
+    margin: 20px 0;
+    padding: 10px;
+    border: 4px solid white ;
+}
+footer{
+    color: white;
+    background-color:red;
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px;
+}
+/* pseudo classes*/
+nav li a:hover{
+    text-decoration: underline;
+}
+.images li:hover{
+    position:relative;
+    top:-10px;
+}
+form input:focus{
+    outline:none;
+    border: 4px dashed black;
+}
+form input:valid{
+    border: 4px solid greenyellow;
+}
+nav li:first-child{
+    border: 4px dashed white 
+/* ye first element , nav ka jo ki "join the club" h 
+usko css kr raha h */
+}
+/* pseudo elements*/
+p::selection{
+    background-color: pink;
+    color: blue;
+}
+p::after{
+    content:'THIS IS THE EXTRA CONTENT AFTER THIS <P> TAG';
+}
+section.join p::first-letter{
+    font-size: 1.5em;
+}
+article p::first-line{
+font-width:bold ;
+font-size: 1.3em;
+color: black;
+}
+@media screen and (max-width: 1230px) {
+ div {
+    font-size: 60px;
+  }
+  nav li {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1056px) {
+ div {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    .banner .welcome h2 {
+    font-size: 30px; /* desired smaller size */
+  }
+  .banner .welcome {
+    position: relative;
+  }
+.banner .welcome br {
+    display: none;
+  }
+  .banner .welcome h2 {
+    font-size: 30px; /* or choose smaller size that fits */
+    line-height: 1.2; /* ensure proper spacing */
+  }
+}

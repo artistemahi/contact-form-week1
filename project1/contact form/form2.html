@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <h1>Contact Us</h1>
+            <div class="row">
+                <div>
+                    <label for="firstname">First Name <span style="color: green;">*</span></label>
+                    <input type="text" id="firstname" required>
+                </div>
+                <div>
+                    <label for="lastname">Last Name <span style="color: green;">*</span></label>
+                    <input type="text" id="lastname" required>
+                </div>
+            </div>
+            <label for="email">Email Address <span style="color: green;">*</span></label>
+            <input type="email" id="email" required>
+            <label>Query Type <span style="color: green;">*</span></label>
+            <div class="row radio-row">
+                <div>
+                    <input type="radio" id="general" name="query" value="General Enquiry" required>
+                    <label for="general">General Enquiry</label>
+                </div>
+                <div>
+                    <input type="radio" id="support" name="query" value="Support Request">
+                    <label for="support">Support Request</label>
+                </div>
+            </div>
+            <label for="message">Message <span style="color: green;">*</span></label>
+            <textarea id="message" placeholder="type here..." required></textarea>
+            <div class="check-row">
+                <input type="checkbox" id="consent" required>
+                <label for="consent">I consent to being contacted by the team <span style="color: green;">*</span></label>
+            </div>
+            <input type="submit" value="Submit" class="submit">
+        </form>
+    </div>
+</body>
+</html>

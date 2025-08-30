@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+     <header><h1>Contact Us</h1></header>
+    <div class="formcontainer">
+     <form >
+        <div>
+        
+        <label class="firstname" for="username" required >First Name  <span style="color: green;">*</span></label>
+            <br>
+        
+            <input class="firstname" type="text" id="username" required>
+    
+            <br>
+           <p class="last">  
+        <label class="lastname" for="lastname">Last Name  <span style="color: green;">*</span></label>
+            <br>
+        <input class="lastname" type="text" id="lastname" required>
+            </p>
+        <br>
+        <label class="email" for="email">Email  <span style="color: green;">*</span></label>
+            <br>
+        <input class="email" type="email" id="email" required>
+         <br>
+        
+         <label class="query" for="query">Query Type  <span style="color: green;">*</span></label>
+         <br>
+
+         <span class="gen">
+         <input  type="radio" name="query" value="General Enquiry"id="opt1" required>
+         <label class="general"  for="opt1">General Enquiry</label>
+         </span>
+         <br>
+        <span class="supp">
+         <input  type="radio" name="query" value="Support Request" id="opt2" required>
+         <label class="support" for="opt2">Support Request</label>
+         </span>
+
+         <br>
+        <label class="message" for="Message">Message  <span style="color: green;">*</span></label>
+        <br>
+        <span>
+        <textarea name="" id="Message" placeholder="type here..." required></textarea >
+        </span>
+            <br>
+        <input class="consent" type="checkbox" name="consent" id="consent" required>
+        <label class="consent" for="consent">I consent to being contacted by the team  <span style="color: green;">*</span></label>
+         <br>
+         <input class="submit" type="submit" name="submit" id="submit">
+</div>
+    </form>
+    </div>
+</body>
+</html>
