@@ -11,27 +11,35 @@
         <form >
          <header><h1>Contact Us</h1></header>
         <div>
-        
-        <label class="firstname" for="username" required >First Name  <span style="color: green;">*</span></label>
-        <input class="firstname" type="text" id="username" required>
-        <label class="lastname" for="lastname">Last Name  <span style="color: green;">*</span></label>
-        <input class="lastname" type="text" id="lastname" required>
+        <div class="row">
+            <div class="colum">
+            <label class="firstname" for="username" required >First Name  <span style="color: green;">*</span></label>
+            <input class="firstname" type="text" id="username" required>
+            </div> 
 
+            <div class="colum">   
+            <label class="lastname" for="lastname">Last Name  <span style="color: green;">*</span></label>
+            <input class="lastname" type="text" id="lastname" required>
+            </div>
+        </div>
         <label class="email" for="email">Email  <span style="color: green;">*</span></label>
         <input class="email" type="email" id="email" required>
         
          <label class="query" for="query">Query Type  <span style="color: green;">*</span></label>
-
+     <div class="row">
+        <div class="colum">
          <span class="gen">
          <input  type="radio" name="query" value="General Enquiry"id="opt1" required>
          <label class="general"  for="opt1">General Enquiry</label>
          </span>
-
+         </div>
+         <div class="colum">
         <span class="supp">
          <input  type="radio" name="query" value="Support Request" id="opt2" required>
          <label class="support" for="opt2">Support Request</label>
          </span>
-
+         </div>
+    </div>  
         <label class="message" for="Message">Message  <span style="color: green;">*</span></label>
         <span>
         <textarea name="" id="Message" placeholder="type here..." required></textarea >
